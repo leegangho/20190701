@@ -1,5 +1,3 @@
-
-"""
 # numbers를 파라미터로 갖는 함수
 def solution(numbers):
     #numbers의 각 요소를 꺼내서 str으로 변환하고 다시 list에 넣는다.
