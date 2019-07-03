@@ -1,3 +1,5 @@
+
+"""
 # numbers를 파라미터로 갖는 함수
 def solution(numbers):
     #numbers의 각 요소를 꺼내서 str으로 변환하고 다시 list에 넣는다.
@@ -14,4 +16,20 @@ def solution(numbers):
 
 numbers=[6,10,2,3,30]
 
+print(solution(numbers))
+"""
+
+def solution(numbers):
+    
+    numbers_str=list(map(str,numbers))
+    #reverse=True 내림차순 정렬
+    numbers_str.sort(key=lambda x: x*4,reverse=True)
+    
+    if numbers_str[0] == '0':
+        return '0'
+    else:
+        answer=''.join(numbers_str)
+        return answer
+
+numbers=[6,10,2]
 print(solution(numbers))
