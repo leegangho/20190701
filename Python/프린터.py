@@ -20,6 +20,10 @@ def solution(priorities,location):
                 location-=1
     return answer
 
+# index를 같이 움직여야한다. zip으로 하는 것 보다 
+# location을 -1 씩 하고, 맨 뒤로 갈 경우 location=len(priorities)-1 로 해야 한다!! 
+
+
 result=solution(priorities,2)
 print(result)
 """
