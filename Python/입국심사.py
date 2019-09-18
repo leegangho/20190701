@@ -36,10 +36,5 @@ def solution(n,times):
     return answer
 
 times=[7,10]
-x=solution(6,times)
+x=solution(1,times)
 print(x)
-#times.sort(reverse=False)
-#print(times)
-#answer=max(times)
-#answer=sum(times[:2])
-#print(answer)

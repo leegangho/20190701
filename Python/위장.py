@@ -1,16 +1,17 @@
 from collections import Counter
 
 test=[["yello_hat","headgear"],["blue_suglasses","eyewear"],["green_turban","headgear"]]
-
+print([i for i,category in test])
 
 def solution(test):
-    category_count=Counter([category for i,category in test])
+    category_count=Counter([category for i,category in test]) #종류별로 의상 세고 
     answer=1
     for key in category_count:
         answer=answer*(category_count[key]+1)
     answer=answer-1
     return answer
 
+print(solution(test))
 
 
 # 경우의 수를 구하는 문제

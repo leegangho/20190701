@@ -27,7 +27,8 @@ heapq.heappush(heap,4)
 heapq.heappush(heap,1)
 heapq.heappush(heap,7)
 heapq.heappush(heap,3)
-# [1,3,7,4]
+#        [1,3,7,4]
+#   index:0,1,2,4
 
 heapq.heappop(heap) 를 하면 최소값을 삭제합니다. 
 # 주의점 heap은 이진트리 배치형태이므로 반드시 두번째 작은값이, 두번째 index에 있다고 보장할 수 없다.
